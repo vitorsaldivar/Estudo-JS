@@ -1,0 +1,13 @@
+div#interact {
+    margin: auto;
+    background-color: rgba(0, 255, 255, 0.37);
+    color: white;
+    text-align: center;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 10px;
+    text-shadow: 0 0 10px black;
+    font: normal small-caps;
+    font-size: 5vh;
+    line-height: 30vh;
+}
