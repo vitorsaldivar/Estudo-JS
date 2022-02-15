@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 10</title>
+    <style>
+        body {
+            font: 12pt verdana;
+            background-color: blueviolet;
+        }
+        button {
+            background-color: lightgray;
+            padding: 20px;
+        }
+        button:active {
+            background-color: gray;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resolvendo Bhaskara</h1>
+    <button onclick="bhaskara()">Calcular</button>
+    <section id="resultado">
+        <p>Considerando uma equação no formato <strong>ax²+bx+c</strong> = 0, aperte o botão acima para calcular o valor de  &#916.</p>
+    </section>
+    <script>
+        function bhaskara() {
+            let a = Number.parseFloat(window.prompt('digite o valor de a:'))
+            let b = Number.parseFloat(window.prompt('digite o valor de b:'))
+            let c = Number.parseFloat(window.prompt('digite o valor de c:'))
+            let delta = b**2 - 4*a*c
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<h2>Resolvendo Bhaskara</h2>
+                            <p>A equação foi <strong>${a}x² + ${b}x + ${c} = 0</strong><br>
+                                O cálculo realizado  será <strong>&#916 = ${b}² - 4.${a}.${c}</strong><br>
+                                O valor calculado foi <strong>&#916 = ${delta}</strong></p>`
+        }
+    </script>
+</body>
+</html>

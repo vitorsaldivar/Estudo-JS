@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <style>
+        body {
+            font: 12pt verdana;
+            background-color: blueviolet;
+        }
+        button {
+            background-color: lightgray;
+            padding: 20px;
+        }
+        button:active {
+            background-color: gray;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <button onclick="troco()">Comprar Produto</button>
+    <script>
+        function troco() {
+            let product = window.prompt('Que produto vc está comprando?')
+            let price = Number.parseFloat(window.prompt(`Quanto custa ${product} que vc está comprando?`))
+            let vlpago = Number.parseFloat(window.prompt(`Qual foi o valor que vc deu para pagar o ${product}?`))
+            let troco = vlpago - price
+            window.alert(`Vc comprou ${product} que custou R$ ${price}.\nDeu R$ ${vlpago} em dinheiro e vai receber R$ ${troco} de troco.\nVolte Sempre!`)
+        }
+    </script>
+</body>
+</html>

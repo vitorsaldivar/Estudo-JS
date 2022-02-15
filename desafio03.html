@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        body {
+            font: 12pt arial;
+        }
+        button {
+            background-color: lightgray;
+            padding: 20px;
+            border: none;
+        }
+        button:active {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+    <button onclick="inicio()">Antecessor e sucessor</button>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado...</p>
+    </section>
+
+    <script>
+        function inicio() {
+            let num = Number.parseInt(window.prompt('Digite um número...'))
+            let antes = num - 1
+            let depois = num + 1
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>Antes de ${num}, temos o número ${antes}.<br>
+                            Depois de ${num}, temos o número ${depois}.</p>`
+        }
+    </script>
+    
+</body>
+</html>

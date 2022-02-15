@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 5</title>
+    <style>
+        body {
+            font: 12pt verdana;
+            background-color: blueviolet;
+        }
+        button {
+            background-color: lightgray;
+            padding: 20px;
+        }
+        button:active {
+            background-color: gray;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <button onclick="converte()">Converter</button>
+    <section id="resultado">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+    <script>
+        function converte() {
+            let med = Number.parseFloat(window.prompt('digite uma distância em metros (m)'))
+            let km = med / 1000
+            let hm = med / 100
+            let dam = med / 10
+            let dm = med * 10
+            let cm = med * 100
+            let mm = med * 1000
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<h2>A distância de ${med} metros, corresponde a...</h2>
+                            <p>${km} quilometros (km)<br>
+                                ${hm} hectometros (hm)<br>
+                                ${dam} decâmetros (dam)<br>
+                                ${dm} decímetros (dm)<br>
+                                ${cm} cent´metros (cm)<br>
+                                ${mm} milímetros (mm)</p>`
+        }
+    </script>
+</body>
+</html>
