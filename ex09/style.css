@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(38, 141, 141, 0.801);
+    font: normal 20px arial;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+}
+div#corpo {
+    padding: 20px;
+    width: 60vw;
+    margin: auto;
+    height: fit-content;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
+}
+footer {
+    padding-top: 30px;
+    text-align: center;
+    font-size: .8em;
+}
