@@ -1,0 +1,25 @@
+body {
+    background-color: rgba(38, 141, 141, 0.801);
+    font: normal 20px arial;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+}
+section {
+    padding: 20px;
+    width: 40vw;
+    margin: auto;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.651);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
+}
+footer {
+    padding-top: 30px;
+    text-align: center;
+    font-size: .8em;
+    color: white;
+    text-shadow: 2px 0 2px rgba(0, 0, 0, 0.514);
+}
